@@ -1,6 +1,6 @@
 //Nome:Yan Gimenez Borges
 //RA:769826
-//Curso:Engenharia de Computação
+//Curso:Engenharia de ComputaÃ§Ã£o
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -12,7 +12,7 @@ typedef struct pessoa Pessoa ;
 
 Pessoa *inicio = NULL ;
 
-//Declaração de funçoes
+//DeclaraÃ§Ã£o de funÃ§oes
 void insereLista ( int pos ) ;
 void removeLista ( Pessoa * p ) ;
 void imprimeLista () ;
@@ -69,12 +69,12 @@ void removeLista(Pessoa *p){
     do{
         for(int i = 1; i <= m ; i++)              //pula m passos ate a pessoa a ser morta
             inicio = inicio->prox;              // quem morre
-        if(mata == inicio->prox)                  // quem mata é o msm q morre
+        if(mata == inicio->prox)                  // quem mata Ã© o msm q morre
             inicio = inicio->prox;;
         imprimeMataMorre( mata , inicio->prox );
         removeLista(inicio);
         imprimeLista();
-        mata = inicio->prox;                // quem mata é o proximo a ser morto
+        mata = inicio->prox;                // quem mata Ã© o proximo a ser morto
         tam--;
     }while(tam > 1);
     resultado = mata->posicao;
